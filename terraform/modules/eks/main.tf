@@ -37,14 +37,22 @@ module "eks" {
 data "aws_iam_policy_document" "github_actions_assume" {
   statement {
     actions = ["sts:AssumeRoleWithWebIdentity"]
+
     principals {
       type        = "Federated"
       identifiers = [module.eks.oidc_provider_arn]
     }
+
+    condition {
+      test     = "StringEquals"
+      variable = "token.actions.githubusercontent.com:aud"
+      values   = ["sts.amazonaws.com"]
+    }
+
     condition {
       test     = "StringLike"
       variable = "token.actions.githubusercontent.com:sub"
-      values   = ["repo:<YOUR-GITHUB-USERNAME>/<YOUR-REPO-NAME>:*"]
+      values   = ["repo:mia-rashel/Cloud-Native-Platform-On-AWS:*"]
     }
   }
 }
