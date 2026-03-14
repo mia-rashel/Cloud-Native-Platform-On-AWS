@@ -42,7 +42,7 @@ app.use((req, res, next) => {
 
 // Health check — Kubernetes calls this to know the app is alive
 app.get("/health", (req, res) => {
-    res.json({ status: "ok", service: "nodejs-app" });
+    res.json({ status: "ok", service: "nodejs-app", version: "1.0.1" });
 });
 
 // List all items from the database
