@@ -1,0 +1,26 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Terraform lock
+.terraform.lock.hcl
+
+# Terraform variables
+*.tfvars
+*.tfvars.json
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+
+# Environment files
+.env
+
+# OS
+.DS_Store
+Thumbs.db
