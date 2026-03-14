@@ -1,0 +1,12 @@
+project      = "devops-platform"
+environment  = "dev"
+aws_region   = "us-east-1"
+vpc_cidr     = "10.0.0.0/16"
+cluster_name = "devops-dev"
+domain_name  = "dev.rashel-mia.site"
+# Example: domain_name = "dev.mydevopsproject.dev"
+root_domain = "rashel-mia.site"
+# Example: root_domain = "mydevopsproject.dev"
+db_instance_class = "db.t3.micro"
+node_desired      = 2
+node_max          = 5

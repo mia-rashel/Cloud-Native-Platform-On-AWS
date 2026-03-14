@@ -1,0 +1,10 @@
+project           = "devops-platform"
+environment       = "staging"
+aws_region        = "us-east-1"
+vpc_cidr          = "10.1.0.0/16"
+cluster_name      = "devops-staging"
+domain_name       = "staging.<YOUR-DOMAIN>"
+root_domain       = "<YOUR-DOMAIN>"
+db_instance_class = "db.t3.micro"
+node_desired      = 2
+node_max          = 8

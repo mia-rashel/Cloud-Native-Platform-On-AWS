@@ -1,0 +1,10 @@
+project           = "devops-platform"
+environment       = "prod"
+aws_region        = "us-east-1"
+vpc_cidr          = "10.2.0.0/16"
+cluster_name      = "devops-prod"
+domain_name       = "api.<YOUR-DOMAIN>"
+root_domain       = "<YOUR-DOMAIN>"
+db_instance_class = "db.t3.small"
+node_desired      = 3
+node_max          = 20
