@@ -14,7 +14,7 @@ metadata:
     alb.ingress.kubernetes.io/healthcheck-timeout-seconds: "5"
     alb.ingress.kubernetes.io/healthy-threshold-count: "2"
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP":80},{"HTTPS":443}]'
-    alb.ingress.kubernetes.io/certificate-arn: "arn:aws:acm:us-east-1:619071346619:certificate/50b46a9f-6526-4740-8e85-e79b6aab330a"
+    alb.ingress.kubernetes.io/certificate-arn: "arn:aws:acm:us-east-1:619071346619:certificate/3703bef4-076b-4717-9ac7-525ee8a3440f"
     alb.ingress.kubernetes.io/ssl-redirect: "443"
 spec:
   ingressClassName: alb
