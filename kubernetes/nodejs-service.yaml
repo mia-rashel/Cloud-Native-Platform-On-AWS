@@ -3,6 +3,8 @@ kind: Service
 metadata:
   name: nodejs-app
   namespace: app
+  labels:
+    app: nodejs-app
 spec:
   selector:
     app: nodejs-app

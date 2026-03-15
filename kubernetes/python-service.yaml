@@ -3,6 +3,8 @@ kind: Service
 metadata:
   name: python-app
   namespace: app
+  labels:
+    app: python-app
 spec:
   selector:
     app: python-app
