@@ -42,6 +42,7 @@ jobs:
     outputs:
       image: ${{ steps.build.outputs.image }}
     steps:
+
       - uses: actions/checkout@v4
 
       - name: Configure AWS credentials
@@ -91,7 +92,7 @@ jobs:
       - name: Smoke test
         run: |
           for i in 1 2 3 4 5; do
-            STATUS=$(curl -s -o /dev/null -w "%{http_code}" http://rashel-mia.site/health)
+            STATUS=$(curl -L -s -o /dev/null -w "%{http_code}" http://rashel-mia.site/health)
             if [ "$STATUS" = "200" ]; then echo "Staging healthy"; exit 0; fi
             sleep 15
           done
