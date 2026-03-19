@@ -36,3 +36,10 @@ spec:
             name: nodejs-app
             port:
               number: 80
+      - path: /api/items
+        pathType: Prefix
+        backend:
+          service:
+            name: nodejs-app
+            port:
+              number: 80
