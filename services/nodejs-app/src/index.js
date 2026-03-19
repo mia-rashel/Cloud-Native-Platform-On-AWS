@@ -39,6 +39,9 @@ app.use((req, res, next) => {
     });
     next();
 });
+app.get("/", (req, res) => {
+    res.send("🚀 DevOps Platform Running");
+});
 
 // Health check — Kubernetes calls this to know the app is alive
 app.get("/health", (req, res) => {

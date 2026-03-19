@@ -1,26 +1,12 @@
 # Terraform
-.terraform/
+**/.terraform/
 *.tfstate
-*.tfstate.*
-crash.log
-
-# Terraform lock
+*.tfstate.backup
+*.tfstate.lock.info
 .terraform.lock.hcl
 
-# Terraform variables
-*.tfvars
-*.tfvars.json
-
-# Node
-node_modules/
-
-# Python
-__pycache__/
-*.pyc
-
-# Environment files
-.env
-
-# OS
-.DS_Store
-Thumbs.db
+# Sensitive files
+*.pem
+*.key
+iam_policy.json
+iam-policy.json
