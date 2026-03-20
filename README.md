@@ -90,8 +90,10 @@ Database:   Amazon RDS PostgreSQL (private subnet)
 │   └── python-app/                # FastAPI with Prometheus metrics
 └── .github/
     └── workflows/
+        ├── rollback.yaml
         ├── deploy-nodejs.yaml
         └── deploy-python.yaml
+
 ```
 
 ---
