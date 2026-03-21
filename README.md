@@ -292,4 +292,4 @@ terraform destroy -var-file=environments/dev/terraform.tfvars
 
 **Muhammad Rashel Mia**
 - GitHub: [@mia-rashel](https://github.com/mia-rashel)
-- LinkedIn: [Muhammad Rashel Mia](https://linkedin.com/in/muhammad-rashel-mia)
+- LinkedIn: [Muhammad Rashel Mia](linkedin.com/in/muhammad-mia)
